@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Posts</h1>
+<h1>Listing Activity</h1><%= link_to 'New Post', new_post_path, class: "waves-effect waves-light btn" %>
 
-<table>
+<table class="highlight">
   <thead>
     <tr>
       <th>User</th>
@@ -25,11 +25,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to 'New Post', new_post_path %>
-
-<br>
-
-<%= console %>
