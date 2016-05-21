@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Workspace
   class Application < Rails::Application
+    config.web_console.whitelisted_ips = '71.79.230.225'
     config.generators do |g|
       g.test_framework :rspec,
       fixtures: true,
